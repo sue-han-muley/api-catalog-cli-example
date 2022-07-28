@@ -1,0 +1,1 @@
+Example API Specifications for Anypoint API Catalog CLI tutorial
