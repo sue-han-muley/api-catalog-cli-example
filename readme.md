@@ -1,5 +1,3 @@
 Example API Specifications for Anypoint API Catalog CLI Tutorials 
 
-Part 1 of tutorial covers basics of Anypoint API Catalog CLI. 
-
-Part 2 of tutorial covers how to integrate the CLI to Github Actions
+Download Follow Tutorial folder as Zip file if you would like to follow along with tutorial link (to add later). For the complete solution, check out the Completed Tutorial folder. 
