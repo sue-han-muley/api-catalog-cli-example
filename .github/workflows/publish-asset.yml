@@ -1,9 +1,8 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: CICD Example
 
-# Controls when the workflow will run
-  # Triggers the workflow on push or pull request events but only for the master branch
+# Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: [ main ]
 
@@ -17,10 +16,12 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
+
       - name: Install api-catalog cli
         run: |
           sudo apt-get update
           npm install -g api-catalog-cli@latest
+
       - name: Publish API to Anypoint Exchange
         env: 
           ANYPOINT_USERNAME: ${{ secrets.ANYPOINT_USERNAME }} 
