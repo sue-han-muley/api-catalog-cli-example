@@ -25,7 +25,6 @@ jobs:
         env: 
           ANYPOINT_USERNAME: ${{ secrets.ANYPOINT_USERNAME }} 
           ANYPOINT_PASSWORD: ${{ secrets.ANYPOINT_PASSWORD }}
-          CATALOG_DESCRIPTOR: './mydescriptor.yaml' 
           ANYPOINT_ORG_ID: ${{ secrets.ANYPOINT_ORGID }}
         run: |
-          api-catalog publish-asset -d $CATALOG_DESCRIPTOR --organization="$ANYPOINT_ORG_ID" --username="$ANYPOINT_USERNAME" --password="$ANYPOINT_PASSWORD"
+          api-catalog publish-asset --organization="$ANYPOINT_ORG_ID" --username="$ANYPOINT_USERNAME" --password="$ANYPOINT_PASSWORD"
