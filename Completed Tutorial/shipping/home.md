@@ -1,5 +1,7 @@
 # Shipping API - UAPIM Demo
 
+## Note: this is a fake documentation
+
 Show a single shipping order if current User has access permissions to it.
 
 **URL** : `/api/shipping/:pk/`
